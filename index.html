@@ -70,14 +70,19 @@
             <li>Easy deployment ready</li>
         </ul>
 
+        <!-- React Dashboard -->
+        <div id="react-app"></div>
+
         <h3>Test the API:</h3>
         <button class="button" onclick="testAPI()">Test API Endpoint</button>
         <div id="api-result"></div>
 
         <h3>Endpoints Available:</h3>
         <ul>
-            <li><code>/</code> - This homepage</li>
+            <li><code>/</code> - This homepage with React dashboard</li>
             <li><code>/api/status</code> - JSON status response</li>
+            <li><code>/api/stats</code> - Real-time statistics</li>
+            <li><code>/api/visitors</code> - Visitor counter</li>
             <li><code>/health</code> - Health check</li>
         </ul>
 
@@ -113,5 +118,8 @@
             }
         };
     </script>
+
+    <!-- React Bundle -->
+    <script src="/bundle.js"></script>
 </body>
 </html>
